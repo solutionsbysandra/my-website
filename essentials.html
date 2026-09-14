@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The Essentials | Tools &amp; Resources I Recommend – Solutions by Sandra</title>
+<meta name="description" content="Tools and services Sandra personally uses and recommends for finance, tech, rewards, and business support.">
+<link rel="icon" href="data:,">
+<script src="https://cdn.tailwindcss.com"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+<style>
+    html, body { margin: 0 !important; padding: 0 !important; background-color: #FAFAFB !important; font-family: 'Inter', sans-serif !important; scroll-behavior: smooth; }
+    #sandra-site-wrapper { display: block !important; position: relative; z-index: 9999; width: 100%; min-height: 100vh; }
+    .nav-header-block { background-color: #FFFFFF; border-bottom: 1px solid #edf2f7; padding: 1.25rem 0; }
+    .fav-card { transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1); background: #ffffff; border: 1px solid #f1f5f9; display: flex; flex-direction: column; height: 100%; }
+    .fav-card:hover { transform: translateY(-8px); box-shadow: 0 30px 60px -12px rgba(59, 11, 69, 0.1); border-color: #3B0B45; }
+    .icon-box { height: 64px; width: 64px; display: flex; align-items: center; justify-content: center; margin-bottom: 2rem; border-radius: 16px; font-size: 1.75rem; }
+    .filter-btn { transition: all 0.3s ease; border: 1px solid #e2e8f0; cursor: pointer; }
+    .filter-btn.active { background-color: #3B0B45 !important; color: white !important; border-color: #3B0B45 !important; }
+    .bonus-badge { font-size: 0.7rem; font-weight: 800; padding: 4px 0; display: inline-block; text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: 2rem; }
+    .hidden-item { display: none !important; }
+</style>
+</head>
+<body class="dark:bg-slate-900">
+<div id="sandra-site-wrapper" class="text-slate-800 antialiased dark:bg-slate-900 dark:text-slate-100">
+    <!-- NAVIGATION -->
+    <header class="nav-header-block sticky top-0 z-[1000] dark:bg-slate-900 dark:border-slate-800">
+        <nav class="flex flex-row items-center justify-between px-6 md:px-12 max-w-7xl mx-auto">
+            <div class="flex items-center"><a href="/" class="text-2xl font-extrabold text-[#3B0B45] dark:text-white tracking-tight">Solutions <span class="italic font-light text-slate-400">by Sandra</span></a></div>
+            <div class="hidden md:flex items-center space-x-10 font-bold text-xs uppercase tracking-[0.2em] text-slate-700 dark:text-slate-300">
+                <a href="/#about" class="hover:text-[#3B0B45] dark:hover:text-purple-400">How I Help</a>
+                <a href="/#solutions" class="hover:text-[#3B0B45] dark:hover:text-purple-400">Services</a>
+                <a href="/essentials" class="hover:text-[#3B0B45] dark:hover:text-purple-400">Essentials</a>
+                <a href="/#inquiry" class="bg-[#3B0B45] text-white px-8 py-3 rounded-full text-xs font-bold tracking-widest hover:opacity-90 transition-all uppercase">LET'S TALK</a>
+            </div>
+            <div class="md:hidden"><button onclick="toggleMenu()" class="text-[#3B0B45] dark:text-purple-400 text-2xl" aria-label="Toggle Mobile Menu"><i class="fa-solid fa-bars"></i></button></div>
+        </nav>
+        <div id="mobile-menu" class="hidden bg-white dark:bg-slate-900 border-t border-slate-100 dark:border-slate-800 p-10 flex flex-col space-y-8 font-extrabold text-xl uppercase tracking-widest text-slate-700 dark:text-slate-200 md:hidden text-center">
+            <a href="/#about" onclick="toggleMenu()">How I Help</a>
+            <a href="/#solutions" onclick="toggleMenu()">Services</a>
+            <a href="/essentials" onclick="toggleMenu()">Essentials</a>
+            <a href="/#inquiry" onclick="toggleMenu()" class="text-[#3B0B45] dark:text-purple-400">LET'S TALK</a>
+        </div>
+    </header>
+
+    <section class="px-6 pt-20 pb-12 max-w-7xl mx-auto">
+        <h1 class="text-5xl font-extrabold text-[#3B0B45] dark:text-white mb-4 text-center md:text-left">The Essentials.</h1>
+        <p class="text-slate-500 dark:text-slate-400 text-lg mb-12 text-center md:text-left">Tools and services I personally use and recommend.</p>
+        <div class="flex flex-col md:flex-row gap-4 items-center justify-between bg-white dark:bg-slate-800 p-4 rounded-2xl shadow-sm border border-slate-100 dark:border-slate-700">
+            <input type="text" id="searchInput" placeholder="Search brands..." class="w-full md:w-96 pl-4 pr-4 py-3 bg-slate-50 dark:bg-slate-900 border border-slate-200 dark:border-slate-700 rounded-xl focus:outline-none focus:border-[#3B0B45]">
+            <div class="flex flex-wrap gap-2 justify-center">
+                <button class="filter-btn active px-5 py-2 rounded-full text-[10px] font-bold uppercase tracking-widest" onclick="filterItems('all')">All</button>
+                <button class="filter-btn px-5 py-2 rounded-full text-[10px] font-bold uppercase tracking-widest dark:text-slate-300" onclick="filterItems('finance')">Finance</button>
+                <button class="filter-btn px-5 py-2 rounded-full text-[10px] font-bold uppercase tracking-widest dark:text-slate-300" onclick="filterItems('tech')">Tech</button>
+                <button class="filter-btn px-5 py-2 rounded-full text-[10px] font-bold uppercase tracking-widest dark:text-slate-300" onclick="filterItems('rewards')">Rewards</button>
+                <button class="filter-btn px-5 py-2 rounded-full text-[10px] font-bold uppercase tracking-widest dark:text-slate-300" onclick="filterItems('support')">Support</button>
+            </div>
+        </div>
+    </section>
+
+    <section class="px-6 py-8 max-w-7xl mx-auto">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8" id="favoritesGrid">
+            <!-- 1. Support -->
+            <div class="fav-card dark:bg-slate-800 dark:border-slate-700 p-10 rounded-[2.5rem]" data-category="support" data-name="buy me a coffee">
+                <div class="icon-box" style="background: #FFFBE6; color: #D4A017;"><i class="fa-solid fa-mug-hot"></i></div>
+                <h3 class="text-2xl font-bold text-[#3B0B45] dark:text-white mb-2">Buy Me a Coffee</h3>
+                <p class="text-slate-500 dark:text-slate-400 text-sm leading-relaxed mb-4">If you find any of these recommendations helpful as you grow your business, feel free to support my work. It's always appreciated!</p>
+                <div class="bonus-badge" style="color: #D4A017;">Support the Creator</div>
+                <a href="https://buymeacoffee.com/solutionsbysandra" target="_blank" rel="noopener" class="mt-auto w-full text-center text-slate-900 font-bold py-4 rounded-xl text-xs uppercase tracking-widest transition-all shadow-md hover:opacity-90" style="background: #FFDD00;">Support Sandra →</a>
+            </div>
+
+            <!-- 2. Tech -->
+            <div class="fav-card dark:bg-slate-800 dark:border-slate-700 p-10 rounded-[2.5rem]" data-category="tech" data-name="zoho">
+                <div class="icon-box" style="background: #E6F0FF; color: #0067FF;"><i class="fa-solid fa-cube"></i></div>
+                <h3 class="text-2xl font-bold text-[#3B0B45] dark:text-white mb-2">Zoho</h3>
+                <p class="text-slate-500 dark:text-slate-400 text-sm leading-relaxed mb-4">The operating system for business. Run your entire company with a seamless suite of professional tools.</p>
+                <div class="bonus-badge" style="color: #0067FF;">Business Essential</div>
+                <a href="https://go.zoho.com/TuZJ" target="_blank" rel="noopener" class="mt-auto w-full text-center text-white font-bold py-4 rounded-xl text-xs uppercase tracking-widest transition-all shadow-md hover:opacity-90" style="background: #0067FF;">Explore Zoho →</a>
+            </div>
+
+            <!-- 3. Finance -->
+            <div class="fav-card dark:bg-slate-800 dark:border-slate-700 p-10 rounded-[2.5rem]" data-category="finance" data-name="chase sapphire card">
+                <div class="icon-box" style="background: #EBF3FF; color: #117aca;"><i class="fa-solid fa-credit-card"></i></div>
+                <h3 class="text-2xl font-bold text-[#3B0B45] dark:text-white mb-2">Chase Sapphire</h3>
+                <p class="text-slate-500 dark:text-slate-400 text-sm leading-relaxed mb-4">Earn up to 125,000 bonus points with the Reserve® or 75,000 with the Preferred®. The traveler's choice.</p>
+                <div class="bonus-badge" style="color: #117aca;">Up to 125K Bonus Points</div>
+                <a href="https://www.referyourchasecard.com/19u/0DVZ0HDS0C" target="_blank" rel="noopener" class="mt-auto w-full text-center text-white font-bold py-4 rounded-xl text-xs uppercase tracking-widest shadow-md hover:opacity-90" style="background: #117aca;">Apply for Sapphire →</a>
+            </div>
+
+            <!-- 4. Finance -->
+            <div class="fav-card dark:bg-slate-800 dark:border-slate-700 p-10 rounded-[2.5rem]" data-category="finance" data-name="wealthfront">
+                <div class="icon-box" style="background: #F0EFFF; color: #4840BB;"><i class="fa-solid fa-chart-line"></i></div>
+                <h3 class="text-2xl font-bold text-[#3B0B45] dark:text-white mb-2">Wealthfront</h3>
+                <p class="text-slate-500 dark:text-slate-400 text-sm leading-relaxed mb-4">High-yield savings with zero fees and a boosted APY for 3 months. Ideal for business cash reserves.</p>
+                <div class="bonus-badge" style="color: #4840BB;">+0.75% APY Boost</div>
+                <a href="https://www.wealthfront.com/c/affiliates/invited/AFFD-WM8D-MGFF-CA3R" target="_blank" rel="noopener" class="mt-auto w-full text-center text-white font-bold py-4 rounded-xl text-xs uppercase tracking-widest shadow-md hover:opacity-90" style="background: #4840BB;">Boost My APY →</a>
+            </div>
+
+            <!-- 5. Finance -->
+            <div class="fav-card dark:bg-slate-800 dark:border-slate-700 p-10 rounded-[2.5rem]" data-category="finance" data-name="robinhood">
+                <div class="icon-box" style="background: #EBFBF4; color: #33D17A;"><i class="fa-solid fa-arrow-trend-up"></i></div>
+                <h3 class="text-2xl font-bold text-[#3B0B45] dark:text-white mb-2">Robinhood</h3>
+                <p class="text-slate-500 dark:text-slate-400 text-sm leading-relaxed mb-4">Commission-free investing. We both get a gift stock when you join using my link.</p>
+                <div class="bonus-badge" style="color: #33D17A;">Free Gift Stock</div>
+                <a href="https://join.robinhood.com/sandram1377" target="_blank" rel="noopener" class="mt-auto w-full text-center text-white font-bold py-4 rounded-xl text-xs uppercase tracking-widest shadow-md hover:opacity-90" style="background: #33D17A;">Claim My Stock →</a>
+            </div>
+
+            <!-- 6. Rewards -->
+            <div class="fav-card dark:bg-slate-800 dark:border-slate-700 p-10 rounded-[2.5rem]" data-category="rewards" data-name="rakuten">
+                <div class="icon-box" style="background: #F3EAFD; color: #8529cd;"><i class="fa-solid fa-bag-shopping"></i></div>
+                <h3 class="text-2xl font-bold text-[#3B0B45] dark:text-white mb-2">Rakuten</h3>
+                <p class="text-slate-500 dark:text-slate-400 text-sm leading-relaxed mb-4">Cash back on almost everything. Spend $50, get $50 back immediately when you join.</p>
+                <div class="bonus-badge" style="color: #8529cd;">$50 Welcome Bonus</div>
+                <a href="https://www.rakuten.com/r/SANDRA22670?eeid=28187" target="_blank" rel="noopener" class="mt-auto w-full text-center text-white font-bold py-4 rounded-xl text-xs uppercase tracking-widest shadow-md hover:opacity-90" style="background: #8529cd;">Get $50 Bonus →</a>
+            </div>
+
+            <!-- 7. Rewards -->
+            <div class="fav-card dark:bg-slate-800 dark:border-slate-700 p-10 rounded-[2.5rem]" data-category="rewards" data-name="topcashback">
+                <div class="icon-box" style="background: #E6F7ED; color: #00b050;"><i class="fa-solid fa-tags"></i></div>
+                <h3 class="text-2xl font-bold text-[#3B0B45] dark:text-white mb-2">TopCashback</h3>
+                <p class="text-slate-500 dark:text-slate-400 text-sm leading-relaxed mb-4">The most generous rewards site. They pass 100% of retailer commissions back to you for the highest rates.</p>
+                <div class="bonus-badge" style="color: #00b050;">Best Cash-Back Rates</div>
+                <a href="https://www.topcashback.com/ref/quecositalinda" target="_blank" rel="noopener" class="mt-auto w-full text-center text-white font-bold py-4 rounded-xl text-xs uppercase tracking-widest transition-all shadow-md hover:opacity-90" style="background: #00b050;">Start Saving →</a>
+            </div>
+
+            <!-- 8. Tech -->
+            <div class="fav-card dark:bg-slate-800 dark:border-slate-700 p-10 rounded-[2.5rem]" data-category="tech" data-name="us mobile">
+                <div class="icon-box" style="background: #E3F2FD; color: #0047FF;"><i class="fa-solid fa-signal"></i></div>
+                <h3 class="text-2xl font-bold text-[#3B0B45] dark:text-white mb-2">US Mobile</h3>
+                <p class="text-slate-500 dark:text-slate-400 text-sm leading-relaxed mb-4">The best 5G pricing for unlimited data. Reliable and affordable cellular service.</p>
+                <div class="bonus-badge" style="color: #0047FF;">$25 Credit Bonus</div>
+                <a href="https://www.usmobile.com/referrals?referrer=0048C03F&name=Sandra&utm_campaign=monster_referral" target="_blank" rel="noopener" class="mt-auto w-full text-center text-white font-bold py-4 rounded-xl text-xs uppercase tracking-widest shadow-md hover:opacity-90" style="background: #0047FF;">Claim $25 Credit →</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER WITH AFFILIATE DISCLOSURE -->
+    <footer class="py-12 border-t border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900 text-center md:text-left">
+        <div class="max-w-7xl mx-auto px-6">
+            <p class="text-[10px] text-slate-400 dark:text-slate-500 uppercase tracking-[0.2em] mb-10 leading-loose">Disclosure: Links on this page are referral or affiliate links. I may earn a small bonus at no extra cost to you.</p>
+            <div class="flex flex-col md:flex-row justify-between items-center border-t border-slate-50 dark:border-slate-800 pt-10">
+                <div class="flex flex-col items-center md:items-start">
+                    <a href="/" class="text-xl font-extrabold text-[#3B0B45] dark:text-white tracking-tight mb-3">Solutions <span class="italic font-light text-slate-400">by Sandra</span></a>
+                    <a href="mailto:sandra@solutionsbysandra.com" class="text-xs font-bold text-[#3B0B45] dark:text-purple-400 uppercase tracking-[0.2em]">sandra@solutionsbysandra.com</a>
+                </div>
+                <div class="mt-8 md:mt-0 text-xs text-slate-400 uppercase tracking-widest">© 2026 Solutions by Sandra</div>
+            </div>
+        </div>
+    </footer>
+</div>
+
+<script>
+    function toggleMenu() {
+        document.getElementById('mobile-menu').classList.toggle('hidden');
+    }
+
+    function filterItems(category) {
+        const items = document.querySelectorAll('.fav-card');
+        const buttons = document.querySelectorAll('.filter-btn');
+        buttons.forEach(btn => {
+            btn.classList.remove('active');
+            if(btn.innerText.toLowerCase().includes(category)) btn.classList.add('active');
+        });
+        items.forEach(item => {
+            if (category === 'all' || item.getAttribute('data-category') === category) {
+                item.classList.remove('hidden-item');
+            } else {
+                item.classList.add('hidden-item');
+            }
+        });
+    }
+
+    document.getElementById('searchInput').addEventListener('keyup', function(e) {
+        const q = e.target.value.toLowerCase();
+        const items = document.querySelectorAll('.fav-card');
+        items.forEach(item => {
+            const name = item.getAttribute('data-name');
+            item.classList.toggle('hidden-item', !name.includes(q));
+        });
+    });
+</script>
+</body>
+</html>

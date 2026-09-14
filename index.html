@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Solutions by Sandra | Business Systems, Automations &amp; Sales Funnels</title>
+<meta name="description" content="Sandra partners with founders to build the sales funnels, automations, and business systems that let them run their business while she handles the tech.">
+<link rel="icon" href="data:,">
+<script src="https://cdn.tailwindcss.com"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+<style>
+    html, body { margin: 0 !important; padding: 0 !important; background-color: #FFFFFF !important; font-family: 'Inter', sans-serif !important; scroll-behavior: smooth; }
+    #sandra-site-wrapper { display: block !important; position: relative; z-index: 9999; background: #FFFFFF; width: 100%; min-height: 100vh; }
+    .nav-header-block { background-color: #FFFFFF; border-bottom: 1px solid #edf2f7; padding: 1.25rem 0; box-shadow: 0 2px 15px rgba(0,0,0,0.03); }
+    .process-box { transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1); cursor: default; }
+    .process-box:hover { background-color: #3B0B45 !important; border-color: #3B0B45 !important; box-shadow: 0 20px 25px -5px rgba(59, 11, 69, 0.2) !important; transform: translateY(-2px); }
+    .process-box:hover .step-title, .process-box:hover .step-desc { color: #FFFFFF !important; }
+    .clean-input { width: 100%; border-bottom: 2px solid #E2E8F0; background: transparent; padding: 1rem 0; font-size: 1rem; transition: border-color 0.3s; border-top: none; border-left: none; border-right: none; border-radius: 0; }
+    .clean-input:focus { outline: none; border-color: #3B0B45; }
+    .custom-label { display: block; font-size: 0.75rem; font-weight: 800; text-transform: uppercase; letter-spacing: 0.1em; color: #94a3b8; margin-bottom: 0.4rem; }
+    .fade-in { animation: fadeIn 0.6s cubic-bezier(0.23, 1, 0.32, 1) forwards; }
+    @keyframes fadeIn { from { opacity: 0; transform: translateY(10px); } to { opacity: 1; transform: translateY(0); } }
+</style>
+</head>
+<body class="dark:bg-slate-900">
+<div id="sandra-site-wrapper" class="text-slate-800 antialiased dark:bg-slate-900 dark:text-slate-100">
+    <!-- NAVIGATION -->
+    <header class="nav-header-block sticky top-0 z-[1000] dark:bg-slate-900 dark:border-slate-800">
+        <nav class="flex flex-row items-center justify-between px-6 md:px-12 max-w-7xl mx-auto">
+            <div class="flex items-center">
+                <a href="http://www.solutionsbysandra.com/"><img="https://assets.cdn.filesafe.space/yT5C81Q0E9HRwEexXrvS/media/69aa8b72b2a2748a88b5b224.svg"></a>
+            </div>
+            <div class="hidden md:flex items-center space-x-10 font-bold text-xs uppercase tracking-[0.2em] text-slate-700 dark:text-slate-300">
+                <a href="/#about" class="hover:text-[#3B0B45] dark:hover:text-purple-400">How I Help</a>
+                <a href="/#solutions" class="hover:text-[#3B0B45] dark:hover:text-purple-400">Services</a>
+                <a href="/essentials" class="hover:text-[#3B0B45] dark:hover:text-purple-400">Essentials</a>
+                <a href="/#inquiry" class="bg-[#3B0B45] text-white px-8 py-3 rounded-full hover:opacity-90 transition-all uppercase">LET'S TALK</a>
+            </div>
+            <div class="md:hidden">
+                <button onclick="toggleMenu()" class="text-[#3B0B45] dark:text-purple-400 text-2xl" aria-label="Toggle Mobile Menu"><i class="fa-solid fa-bars"></i></button>
+            </div>
+        </nav>
+        <!-- Mobile Navigation Drawer -->
+        <div id="mobile-menu" class="hidden bg-white dark:bg-slate-900 border-t border-slate-100 dark:border-slate-800 p-10 flex flex-col space-y-8 font-extrabold text-xl uppercase tracking-widest text-slate-700 dark:text-slate-200 md:hidden text-center">
+            <a href="/#about" onclick="toggleMenu()">How I Help</a>
+            <a href="/#solutions" onclick="toggleMenu()">Services</a>
+            <a href="/essentials" onclick="toggleMenu()">Essentials</a>
+            <a href="/#inquiry" onclick="toggleMenu()" class="text-[#3B0B45] dark:text-purple-400">LET'S TALK</a>
+        </div>
+    </header>
+
+    <!-- HERO SECTION -->
+    <section class="px-6 pt-16 pb-24 max-w-7xl mx-auto flex flex-col md:flex-row items-center gap-16">
+        <div class="md:w-1/2 text-center md:text-left">
+            <span class="text-[#3B0B45] dark:text-purple-400 font-bold tracking-[0.2em] uppercase text-xs mb-4 block">Sales Funnels • Digital Automations • Systems Architect</span>
+            <h1 class="text-5xl md:text-7xl font-extrabold text-[#3B0B45] dark:text-white leading-tight">Run your business. <br><span class="italic font-light text-slate-400 dark:text-slate-400 text-4xl md:text-6xl">I'll handle the tech.</span></h1>
+            <p class="mt-8 text-xl text-slate-600 dark:text-slate-300 max-w-md leading-relaxed mx-auto md:mx-0">Setting up automated journeys and technical systems that support your growth.</p>
+            <div class="mt-10">
+                <a href="/#inquiry" class="bg-[#3B0B45] text-white px-10 py-4 rounded-sm font-bold shadow-xl hover:-translate-y-1 transition-all uppercase tracking-widest text-xs inline-block">Get Started</a>
+            </div>
+        </div>
+        <div class="md:w-1/2 w-full max-w-[450px]">
+<img src="https://assets.cdn.filesafe.space/yT5C81Q0E9HRwEexXrvS/media/69aa5eda618c8d431817af4a.jpg" class="rounded-[3rem] shadow-lg w-full h-auto" alt="Sandra - Systems Architect">
+        </div>
+        </div>
+    </section>
+
+    <!-- ABOUT / HOW I HELP -->
+    <section id="about" class="py-24 border-t border-slate-100 dark:border-slate-800">
+        <div class="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-2 gap-20 items-center">
+            <div class="space-y-6 text-slate-500 dark:text-slate-400 leading-relaxed text-lg text-center md:text-left">
+                <div class="space-y-2">
+                    <h2 class="text-sm font-bold tracking-[0.4em] text-slate-400 uppercase">A Partner for your Business</h2>
+                    <h3 class="text-4xl md:text-5xl font-bold text-[#3B0B45] dark:text-white leading-tight">Setting you up for success from day one.</h3>
+                </div>
+                <p>Hi, I'm Sandra, and I partner with founders to bridge the gap between where their business is now and where they want to scale.</p>
+                <p>I help you cut through the noise. Whether it's streamlining how you keep track of your clients or transitioning your business to the right tools for your specific journey, I'm here to make the "technical stuff" easy.</p>
+            </div>
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                <div class="process-box bg-slate-50 dark:bg-slate-800 p-6 rounded-2xl border border-slate-200 dark:border-slate-700 shadow-sm">
+                    <span class="step-title text-[#3B0B45] dark:text-purple-400 font-bold text-xs uppercase tracking-widest block">01. Listen</span>
+                    <p class="step-desc text-sm text-slate-600 dark:text-slate-300 mt-2 font-medium">We talk about your goals and what you need help with.</p>
+                </div>
+                <div class="process-box bg-slate-50 dark:bg-slate-800 p-6 rounded-2xl border border-slate-200 dark:border-slate-700 shadow-sm">
+                    <span class="step-title text-[#3B0B45] dark:text-purple-400 font-bold text-xs uppercase tracking-widest block">02. Plan</span>
+                    <p class="step-desc text-sm text-slate-600 dark:text-slate-300 mt-2 font-medium">Together, I help you identify the tools that fit your unique workflow.</p>
+                </div>
+                <div class="process-box bg-slate-50 dark:bg-slate-800 p-6 rounded-2xl border border-slate-200 dark:border-slate-700 shadow-sm">
+                    <span class="step-title text-[#3B0B45] dark:text-purple-400 font-bold text-xs uppercase tracking-widest block">03. Build</span>
+                    <p class="step-desc text-sm text-slate-600 dark:text-slate-300 mt-2 font-medium">I set everything up so it runs smoothly on its own.</p>
+                </div>
+                <div class="process-box bg-slate-50 dark:bg-slate-800 p-6 rounded-2xl border border-slate-200 dark:border-slate-700 shadow-sm">
+                    <span class="step-title text-[#3B0B45] dark:text-purple-400 font-bold text-xs uppercase tracking-widest block">04. Support</span>
+                    <p class="step-desc text-sm text-slate-600 dark:text-slate-300 mt-2 font-medium">I'm here to help as your systems and business grow.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SOLUTIONS GRID -->
+    <section id="solutions" class="py-24 bg-slate-50 dark:bg-slate-800/50 border-y border-slate-100 dark:border-slate-800">
+        <div class="max-w-7xl mx-auto px-6 text-center md:text-left">
+            <h2 class="text-4xl md:text-5xl font-extrabold text-[#3B0B45] dark:text-white mb-20 uppercase tracking-tighter">The Solutions.</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
+                <div class="bg-white dark:bg-slate-900 p-10 rounded-3xl border border-slate-100 dark:border-slate-800 shadow-sm">
+                    <h3 class="text-lg font-bold text-[#3B0B45] dark:text-purple-400 mb-4 uppercase tracking-widest">Business Systems</h3>
+                    <p class="text-slate-600 dark:text-slate-400 text-sm leading-relaxed">Strategic implementation and platform setup to create a cohesive operational backbone.</p>
+                </div>
+                <div class="bg-white dark:bg-slate-900 p-10 rounded-3xl border border-slate-100 dark:border-slate-800 shadow-sm">
+                    <h3 class="text-lg font-bold text-[#3B0B45] dark:text-purple-400 mb-4 uppercase tracking-widest">Data Migration</h3>
+                    <p class="text-slate-600 dark:text-slate-400 text-sm leading-relaxed">Moving historical data and workflows between platforms with zero downtime or loss.</p>
+                </div>
+                <div class="bg-white dark:bg-slate-900 p-10 rounded-3xl border border-slate-100 dark:border-slate-800 shadow-sm">
+                    <h3 class="text-lg font-bold text-[#3B0B45] dark:text-purple-400 mb-4 uppercase tracking-widest">Sales Funnels</h3>
+                    <p class="text-slate-600 dark:text-slate-400 text-sm leading-relaxed">High-converting landing pages and automated journeys that turn visitors into clients.</p>
+                </div>
+                <div class="bg-white dark:bg-slate-900 p-10 rounded-3xl border border-slate-100 dark:border-slate-800 shadow-sm">
+                    <h3 class="text-lg font-bold text-[#3B0B45] dark:text-purple-400 mb-4 uppercase tracking-widest">Automations</h3>
+                    <p class="text-slate-600 dark:text-slate-400 text-sm leading-relaxed">Connecting your CRM and website for sophisticated, behavioral marketing workflows.</p>
+                </div>
+                <div class="bg-white dark:bg-slate-900 p-10 rounded-3xl border border-slate-100 dark:border-slate-800 shadow-sm">
+                    <h3 class="text-lg font-bold text-[#3B0B45] dark:text-purple-400 mb-4 uppercase tracking-widest">Visibility &amp; SEO</h3>
+                    <p class="text-slate-600 dark:text-slate-400 text-sm leading-relaxed">Optimizing your Google presence and search rankings to ensure you are found easily.</p>
+                </div>
+                <div class="bg-white dark:bg-slate-900 p-10 rounded-3xl border border-slate-100 dark:border-slate-800 shadow-sm">
+                    <h3 class="text-lg font-bold text-[#3B0B45] dark:text-purple-400 mb-4 uppercase tracking-widest">Reputation</h3>
+                    <p class="text-slate-600 dark:text-slate-400 text-sm leading-relaxed">Automated review generation to build authority and social proof on autopilot.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- INQUIRY FORM (Netlify Forms) -->
+    <section id="inquiry" class="py-32 bg-white dark:bg-slate-900">
+        <div class="max-w-4xl mx-auto px-6" id="inquiry-main-container">
+            <div id="dynamic-content" class="fade-in">
+                <div class="text-center mb-16">
+                    <h2 class="text-4xl md:text-5xl font-bold text-[#3B0B45] dark:text-white mb-4">Let's Get To Work.</h2>
+                    <p class="text-slate-400 italic text-lg block">Submit your details below to get started.</p>
+                </div>
+                <form id="custom-sandra-form" name="inquiry" method="POST" data-netlify="true" netlify-honeypot="bot-field" class="space-y-10">
+                    <input type="hidden" name="form-name" value="inquiry">
+                    <p class="hidden">
+                        <label>Don't fill this out if you're human: <input name="bot-field"></label>
+                    </p>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-10">
+                        <div class="space-y-1">
+                            <label class="custom-label" for="c-name">Full Name</label>
+                            <input type="text" id="c-name" name="name" class="clean-input dark:text-white" required placeholder="Full Name">
+                        </div>
+                        <div class="space-y-1">
+                            <label class="custom-label" for="c-phone">Phone Number</label>
+                            <input type="tel" id="c-phone" name="phone" class="clean-input dark:text-white" required placeholder="(555) 555-5555">
+                        </div>
+                    </div>
+                    <div class="space-y-1">
+                        <label class="custom-label" for="c-email">Email Address</label>
+                        <input type="email" id="c-email" name="email" class="clean-input dark:text-white" required placeholder="email@example.com">
+                    </div>
+                    <div class="space-y-1">
+                        <label class="custom-label" for="c-message">Message</label>
+                        <textarea id="c-message" name="message" rows="4" class="clean-input dark:text-white" required placeholder="How can I help you grow?"></textarea>
+                    </div>
+                    <button type="submit" id="submit-btn" class="w-full bg-[#3B0B45] text-white font-bold py-5 rounded-sm uppercase tracking-widest shadow-lg hover:bg-slate-800 transition-colors">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="py-12 border-t border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900">
+        <div class="max-w-7xl mx-auto px-6 text-center md:text-left">
+            <div class="flex flex-col md:flex-row justify-between items-center pt-10 border-t border-slate-50 dark:border-slate-800">
+                <div class="flex flex-col items-center md:items-start">
+                    <a href="http://www.solutionsbysandra.com"><<img src="https://assets.cdn.filesafe.space/yT5C81Q0E9HRwEexXrvS/media/69aa8b72b2a2748a88b5b224.svg" class="w-56 md:w-80 h-auto" alt="Solutions by Sandra"></a>
+                    <a href="mailto:sandra@solutionsbysandra.com" class="text-xs font-bold text-[#3B0B45] dark:text-purple-400 uppercase tracking-[0.2em]">sandra@solutionsbysandra.com</a>
+                </div>
+                <div class="mt-8 md:mt-0 text-xs text-slate-400 uppercase tracking-widest">© 2026 Solutions by Sandra</div>
+            </div>
+        </div>
+    </footer>
+</div>
+
+<script>
+    function toggleMenu() {
+        document.getElementById('mobile-menu').classList.toggle('hidden');
+    }
+
+    document.getElementById('custom-sandra-form').addEventListener('submit', function(e) {
+        e.preventDefault();
+
+        const form = e.target;
+        const btn = document.getElementById('submit-btn');
+        btn.innerText = "SENDING...";
+        btn.disabled = true;
+
+        fetch('/', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+            body: new URLSearchParams(new FormData(form)).toString()
+        })
+        .then(response => {
+            if (!response.ok) throw new Error('Submission failed');
+            document.getElementById('dynamic-content').innerHTML = `
+                <div class="text-center py-24 bg-slate-50 dark:bg-slate-800 rounded-[3rem] border border-slate-100 dark:border-slate-700 shadow-sm fade-in">
+                    <h3 class="text-4xl md:text-5xl font-bold text-[#3B0B45] dark:text-white mb-6 leading-tight">Thank You! <br><span class="italic font-light text-slate-400 text-3xl">I've got it.</span></h3>
+                    <p class="text-slate-500 dark:text-slate-300 text-lg mb-12 max-w-sm mx-auto leading-relaxed">Your message has been delivered. I'll reach out within 24 hours.</p>
+                </div>
+            `;
+            window.scrollTo({ top: document.getElementById('inquiry').offsetTop - 50, behavior: 'smooth' });
+        })
+        .catch(error => {
+            console.error('Form Submit Error:', error);
+            btn.innerText = "SEND MESSAGE";
+            btn.disabled = false;
+            alert("There was an issue submitting your request. Please email sandra@solutionsbysandra.com directly.");
+        });
+    });
+</script>
+</body>
+</html>
